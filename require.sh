@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ubuntu/
+cd $home
 apt-get update --force-yes
 apt-get upgrade --force-yes
 apt-get install unzip bc vim screen wget
