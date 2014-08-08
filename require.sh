@@ -17,5 +17,5 @@ apt-get install fail2ban
 add-apt-repository ppa:nginx/stable
 apt-get update
 apt-get install nginx
-sudo apt-get install openjdk-6-jdk
+sudo apt-get install openjdk-7-jdk
 sudo apt-get install docker.io
