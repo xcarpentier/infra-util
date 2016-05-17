@@ -2,8 +2,7 @@
 cd $home
 apt-get update --force-yes
 apt-get upgrade --force-yes
-apt-get install unzip bc vim screen wget
-apt-get install ntp
+apt-get install unzip bc vim screen wget ntp --force-yes
 ln -fs /usr/share/zoneinfo/Europe/Paris /etc/localtime
 /etc/init.d/ntp stop
 ntpdate pool.ntp.org
@@ -15,6 +14,7 @@ ufw allow 80
 apt-get install fail2ban
 /etc/init.d/fail2ban start
 add-apt-repository ppa:nginx/stable
-apt-get update
-apt-get install nginx
-sudo apt-get install openjdk-6-jdk
+apt-get update --force-yes
+apt-get install nginx --force-yes
+sudo apt-get install openjdk-7-jdk
+sudo apt-get install docker.io
